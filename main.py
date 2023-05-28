@@ -93,7 +93,7 @@ for i, a in enumerate([LL, LH, HL, HH]):
     ax.set_yticks([])
 
 fig.tight_layout()
-plt.show()
+plt.show(block=False)
 
 """## emotion_vector (fer)
 
@@ -107,7 +107,7 @@ img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
 
 plt.axis('off')
 plt.imshow(img)
-plt.show()
+plt.show(block=False)
 
 detector = FER()
 
@@ -333,7 +333,7 @@ plt.plot(range(min_clusters, max_clusters+1), sse, label='SSE')
 plt.xlabel('Number of clusters')
 plt.ylabel('SSE')  
 plt.title('The Elbow Method showing the optimal k')
-plt.show()
+plt.show(block=False)
 
 """El elbow se encuentra en el cluster 23"""
 
@@ -392,7 +392,7 @@ for i in range(opt_clusters):  # opt_clusters is the optimal number of clusters 
 plt.xlabel("The silhouette coefficient values")
 plt.ylabel("Cluster label")
 plt.title("Silhouette plot for the various clusters")
-plt.show()
+plt.show(block=False)
 
 """Nuestro modelo KMeans"""
 
@@ -481,7 +481,7 @@ for i in range(opt_clusters):  # opt_clusters is the optimal number of clusters 
 plt.xlabel("The silhouette coefficient values")
 plt.ylabel("Cluster label")
 plt.title("Silhouette plot for the various clusters")
-plt.show()
+plt.show(block=False)
 
 """#GMM
 
@@ -626,7 +626,7 @@ plt.xlabel('Number of Clusters')
 plt.ylabel('Score')
 plt.title('Elbow Method with GMM')
 plt.legend()
-plt.show()
+plt.show(block=False)
 
 """Con el método elbow observamos que en el cluster 12 se comienza a estar flat la función
 
@@ -688,7 +688,7 @@ for i in range(opt_clusters):  # opt_clusters is the optimal number of clusters 
 plt.xlabel("The silhouette coefficient values")
 plt.ylabel("Cluster label")
 plt.title("Silhouette plot for the various clusters")
-plt.show()
+plt.show(block=False)
 
 """Nuestro modelo GMM"""
 
@@ -794,7 +794,7 @@ for i in range(opt_clusters):  # opt_clusters is the optimal number of clusters 
 plt.xlabel("The silhouette coefficient values")
 plt.ylabel("Cluster label")
 plt.title("Silhouette plot for the various clusters")
-plt.show()
+plt.show(block=False)
 
 """## GMM with fer + pca
 
@@ -942,7 +942,7 @@ for i in range(opt_clusters):  # opt_clusters is the optimal number of clusters 
 plt.xlabel("The silhouette coefficient values")
 plt.ylabel("Cluster label")
 plt.title("Silhouette plot for the various clusters")
-plt.show()
+plt.show(block=False)
 
 """Obtenemos que el modelo más efectivo cuenta con 6 componentes de PCA y 5 clusters.
 
@@ -971,7 +971,7 @@ plt.xlabel('Number of Clusters')
 plt.ylabel('Score')
 plt.title('Elbow Method with GMM')
 plt.legend()
-plt.show()
+plt.show(block=False)
 
 """l método elbow indica que 7 es la mejor cantidad de clusters mientras el silhouette score indica que 2.
 
@@ -1034,7 +1034,7 @@ for i in range(opt_clusters):  # opt_clusters is the optimal number of clusters 
 plt.xlabel("The silhouette coefficient values")
 plt.ylabel("Cluster label")
 plt.title("Silhouette plot for the various clusters")
-plt.show()
+plt.show(block=False)
 
 """Nuestra GMM con fer + PCA (Comparamos el modelo final con nuestra implementación del algoritmo) 
 
@@ -1109,7 +1109,7 @@ for i in range(opt_clusters):  # opt_clusters is the optimal number of clusters 
 plt.xlabel("The silhouette coefficient values")
 plt.ylabel("Cluster label")
 plt.title("Silhouette plot for the various clusters")
-plt.show()
+plt.show(block=False)
 
 """#DBSCAN
 
@@ -1241,7 +1241,7 @@ plt.plot(distances)
 plt.xlabel('Points sorted according to distance of nth nearest neighbor')
 plt.ylabel('n-th nearest neighbor distance')  
 plt.title('k-distance Graph')
-plt.show()
+plt.show(block=False)
 
 """Nuestro DBSCAN"""
 
