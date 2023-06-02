@@ -2,6 +2,11 @@
 
 Este proyecto tiene como objetivo realizar el reconocimiento de emociones a partir de imágenes almacenadas en el directorio `Emociones_Dataset`. El código, `main.py`, utiliza diversas técnicas de aprendizaje automático y procesamiento de imágenes para llevar a cabo la tarea.
 
+También se puede ejecutar el proyecto en el siguiente collab (los resultado se obtuvieron de aquí):
+https://colab.research.google.com/drive/1nCTzBTcTkUPJttVY2klcQf-wmcyqDam1?usp=sharing
+
+
+
 ## Estructura del proyecto
 ```
 .
